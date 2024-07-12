@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Models\" />
+    <Folder Include="Converters\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SupplierManagementSystem.Core\SupplierManagementSystem.Core.csproj">
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\SupplierManagementSystem.Data\SupplierManagementSystem.Data.csproj">
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\SupplierManagementSystem.Services\SupplierManagementSystem.Services.csproj">
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+
+</Project>
